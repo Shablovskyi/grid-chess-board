@@ -1,76 +1,75 @@
-body{
+body {
   display: flex;
   padding: 50px;
   justify-content: center;
   margin: 0 auto;
 }
 
-.container{
+.container {
   display: grid;
   grid-template-areas: ". top ." "left center right" ". bottom .";
   grid-template-columns: auto 1fr auto;
   border: 5px solid black;
-  
-  .top{
+
+  .top {
     grid-area: top;
   }
 
-  .right{
+  .right {
     grid-area: right;
   }
 
-  .bottom{
+  .bottom {
     grid-area: bottom;
   }
 
-  .left{
+  .left {
     grid-area: left;
   }
 
-  &__chesslatter{
+  &__chesslatter {
     display: grid;
     grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
 
-    div{
+    div {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 50px;
       width: 100px;
-      h2{
+      h2 {
         margin: 0;
       }
     }
   }
 
-  &__number{
-    div{
+  &__number {
+    div {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100px;
       width: 50px;
-      h2{
+      h2 {
         margin: 0;
       }
     }
   }
 
-  &__chessboard{
+  &__chessboard {
     grid-area: center;
     max-width: 800px;
     display: grid;
     grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
     border: 3px solid black;
-  
-    &-item{
+
+    &-item {
       height: 100px;
       width: 100px;
     }
-  
-    .black{
+
+    .black {
       background-color: #000;
     }
   }
 }
-
