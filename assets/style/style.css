@@ -1,0 +1,63 @@
+body {
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: ". top ." "left center right" ". bottom .";
+  grid-template-columns: auto 1fr auto;
+  border: 5px solid black;
+}
+.container .top {
+  grid-area: top;
+}
+.container .right {
+  grid-area: right;
+}
+.container .bottom {
+  grid-area: bottom;
+}
+.container .left {
+  grid-area: left;
+}
+.container__chesslatter {
+  display: grid;
+  grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+}
+.container__chesslatter div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100px;
+}
+.container__chesslatter div h2 {
+  margin: 0;
+}
+.container__number div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 50px;
+}
+.container__number div h2 {
+  margin: 0;
+}
+.container__chessboard {
+  grid-area: center;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+  border: 3px solid black;
+}
+.container__chessboard-item {
+  height: 100px;
+  width: 100px;
+}
+.container__chessboard .black {
+  background-color: #000;
+}
